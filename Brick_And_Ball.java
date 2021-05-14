@@ -115,8 +115,8 @@ class Brick_And_Ball extends JPanel implements KeyListener, MouseMotionListener,
         lscore.setText("SCORE = "+String.valueOf(score));
         if(start)
         {
-            bx+=5*bdx;
-            by+=5*bdy;
+            bx+=3*bdx;
+            by+=3*bdy;
             if(bx<=0||bx>=980)
                 bdx*=-1;
             if(by<=0)
@@ -154,7 +154,7 @@ class Brick_And_Ball extends JPanel implements KeyListener, MouseMotionListener,
         }
         try
         {
-            Thread.sleep(20);
+            Thread.sleep(12);
         }
         catch(Exception e){}
         repaint();
