@@ -115,8 +115,8 @@ class Brick_And_Ball extends JPanel implements KeyListener, MouseMotionListener,
         lscore.setText("SCORE = "+String.valueOf(score));
         if(start)
         {
-            bx+=3*bdx;
-            by+=3*bdy;
+            bx+=bdx;
+            by+=bdy;
             if(bx<=0||bx>=980)
                 bdx*=-1;
             if(by<=0)
@@ -128,7 +128,7 @@ class Brick_And_Ball extends JPanel implements KeyListener, MouseMotionListener,
                 gameover.setVisible(true);
                 restart.setVisible(true);
             }
-            if(bx>=px&&bx<=px+200&&by<=621&&by>=617)//new Rectangle(bx,by,20,20).intersects(new Rectangle(px,735,200,15)))
+            if(bx>=px&&bx<=px+200&&by<=621&&by>=612)//new Rectangle(bx,by,20,20).intersects(new Rectangle(px,735,200,15)))
                 bdy*=-1;
             if(broken==48)
             {
