@@ -154,7 +154,7 @@ class Brick_And_Ball extends JPanel implements KeyListener, MouseMotionListener,
         }
         try
         {
-            Thread.sleep(100);
+            Thread.sleep(20);
         }
         catch(Exception e){}
         repaint();
